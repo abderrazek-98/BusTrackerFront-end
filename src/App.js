@@ -7,25 +7,21 @@ import LeafletRoutingMachine from "./LeafletRoutingMachine.js";
 
 function App() {
   const position = [36.8065, 10.1815];
-  const phoneNumber = "+216 12 345 678"; // Remplace par le numéro que tu veux appeler
 
   return (
     <div className="App">
       
-       <div className="centered-title">
-        <h2> 🚍 Bus Tracker School</h2>
-      </div>
-      <div className="call-button">
-        <a href={`tel:${phoneNumber}`} className="call-link">
-        Call now {phoneNumber}
-        </a>
-      </div>
+    
+      {/* 
+  <div className="centered-title">
+    <h3> 🚍 Bus Tracker School</h3>
+  </div> 
+*/}
       <div className="map-wrapper" style={{ height: '90vh' }}>
-      <MapContainer  center={position} zoom={13} scrollWheelZoom={false}>
+      <MapContainer  center={position} zoom={10} scrollWheelZoom={false}>
         <LeafletRoutingMachine />
-
         <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">Ecole</a> Educanet'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
       </MapContainer>
