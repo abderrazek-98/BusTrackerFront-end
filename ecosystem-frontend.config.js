@@ -1,8 +1,8 @@
 module.exports = {
   apps: [{
     name: 'bus-tracker-frontend',
-    script: 'npx',
-    args: 'serve -s build -l 3000',
+    script: '/var/www/BusTrackerFront-end/start-frontend.sh',
+    interpreter: 'bash',
     cwd: '/var/www/BusTrackerFront-end',
     env: {
       NODE_ENV: 'production'
