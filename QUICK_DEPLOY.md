@@ -64,7 +64,7 @@ npm install -g serve
 pm2 start ecosystem-frontend.config.js
 
 # Save PM2 configuration
-pm2 save
+    pm2 save
 
 # Check status
 pm2 list
