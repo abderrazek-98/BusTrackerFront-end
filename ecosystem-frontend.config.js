@@ -3,12 +3,12 @@ module.exports = {
     name: 'bus-tracker-frontend',
     script: 'npx',
     args: 'serve -s build -l 3000',
-    cwd: '/root/BusTrackerFront-end',
+    cwd: '/var/www/BusTrackerFront-end',
     env: {
       NODE_ENV: 'production'
     },
-    error_file: '/root/BusTrackerFront-end/logs/pm2-frontend-error.log',
-    out_file: '/root/BusTrackerFront-end/logs/pm2-frontend-out.log',
+    error_file: '/var/www/BusTrackerFront-end/logs/pm2-frontend-error.log',
+    out_file: '/var/www/BusTrackerFront-end/logs/pm2-frontend-out.log',
     log_date_format: 'YYYY-MM-DD HH:mm:ss Z',
     merge_logs: true,
     instances: 1,
