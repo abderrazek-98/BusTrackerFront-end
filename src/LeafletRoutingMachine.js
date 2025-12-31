@@ -5,7 +5,7 @@ import "leaflet-routing-machine/dist/leaflet-routing-machine.css";
 import { useMap } from "react-leaflet";
 import { io } from "socket.io-client";
 
-const SOCKET_SERVER_URL = "http://localhost:5000";
+const SOCKET_SERVER_URL = "http://51.91.249.6:4321";
 
 const LeafletRoutingMachine = () => {
   const map = useMap();
@@ -17,7 +17,7 @@ const LeafletRoutingMachine = () => {
   const [routingControl, setRoutingControl] = useState(null);
   const [alertShown] = useState(false); 
 
-  const API_URL = "http://localhost:5000/api/user/1";
+  const API_URL = "http://51.91.249.6:4321/api/user/1";
   
   useEffect(() => {
 
